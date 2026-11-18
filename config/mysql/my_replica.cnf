@@ -1,0 +1,23 @@
+# ==============================================================================
+# my_replica.cnf - [Plantilla Base: Rol 4 - MySQL Replica GTID]
+# ==============================================================================
+[mysqld]
+server-id = 2
+
+# TODO [Rol 4]: Configuracion GTID y relay-log para replicacion desde mysql-maste
+gtid_mode = ON
+enforce_gtid_consistency = ON
+log_bin = mysql-bin
+binlog_format = ROW
+relay_log = mysql-relay-bin
+log_replica_updates = ON
+
+# TODO [Rol 4]: Nota sobre super_read_only:
+# Si activas read_only/super_read_only antes de inicializar un volumen nuevo,
+# el entrypoint de mysql:8.0 fallara al crear el usuario root. Aplicalo con
+# SET PERSIST tras inicializar el volumen en db_up.sh.
+
+max_connections = 200
+innodb_read_io_threads = 4
+innodb_write_io_threads = 4
+skip-name-resolve

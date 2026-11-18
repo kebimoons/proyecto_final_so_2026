@@ -1,0 +1,15 @@
+# Logs crudos y CSVs locales pesados (se conserva .gitkeep y evidencias acordadas)
+logs/*.log
+logs/*.tmp
+
+# Dependencias Node.js locales
+node_modules/
+app/node_modules/
+
+# Archivos temporales de Word / SO
+~$*.docx
+~$*.xlsx
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

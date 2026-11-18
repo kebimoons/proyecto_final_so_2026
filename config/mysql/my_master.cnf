@@ -1,0 +1,23 @@
+# ==============================================================================
+# my_master.cnf - [Plantilla Base: Rol 4 - MySQL Primario GTID]
+# ==============================================================================
+[mysqld]
+server-id = 1
+
+# TODO [Rol 4]: Habilitar replicacion basada en GTID y binlog en formato ROW
+gtid_mode = ON
+enforce_gtid_consistency = ON
+log_bin = mysql-bin
+binlog_format = ROW
+
+# TODO [Rol 4 - Modulo III]: Configurar durabilidad y metodo de E/S directo (O_DIRECT)
+#   sync_binlog = 1
+#   innodb_flush_log_at_trx_commit = 1
+#   innodb_flush_method = O_DIRECT
+
+# TODO [Rol 4 - Modulo I]: Ajustar conexiones dinamicas e hilos InnoDB de E/S
+max_connections = 200
+innodb_read_io_threads = 4
+innodb_write_io_threads = 4
+# innodb_buffer_pool_size = 512M
+skip-name-resolve
