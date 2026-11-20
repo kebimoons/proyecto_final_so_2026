@@ -1,7 +1,7 @@
 # Proyecto Semestral — Servicios en Producción con Alta Disponibilidad (HA)
 
 - **Curso:** Sistemas Operativos (0689)
-- **Grupo:** 1SF134
+- **Grupo:** 1IL143
 - **Docente:** Isacio Manuel Tamayo Rodríguez
 - **Fecha límite de entrega:** 5 de diciembre de 2026 (23:59)
 - **Repositorio:** `https://github.com/kebimoons/proyecto_final_so_2026.git`
