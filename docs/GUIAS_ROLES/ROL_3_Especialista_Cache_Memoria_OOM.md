@@ -24,7 +24,7 @@ git commit -m "feat(rol-3): configurar Redis HA con 3 Sentinels y pruebas OOM/PS
 
 ## 3. Comandos del Kernel a Ejecutar y Capturar (con tu `PS1`)
 ```bash
-export PS1="grupo1sf134-rol3-tu_nombre@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol3-tu_nombre@so-ha-prod:\w\$ "
 ```
 
 * **Módulo I (Hilos fijos de Redis: `--io-threads` + `bio_*`):**

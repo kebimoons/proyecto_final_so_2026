@@ -1,4 +1,4 @@
-# Guía Integral de Sustentación Grupal — Proyecto HA (Grupo 1SF134)
+# Guía Integral de Sustentación Grupal — Proyecto HA (Grupo 1IL143)
 
 **Curso:** Sistemas Operativos (0689) · **Docente:** Isacio Manuel Tamayo Rodríguez · **Entrega:** 5 de diciembre de 2026
 

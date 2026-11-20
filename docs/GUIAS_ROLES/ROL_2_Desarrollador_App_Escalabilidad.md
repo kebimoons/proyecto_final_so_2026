@@ -26,7 +26,7 @@ git commit -m "feat(rol-2): implementar API clusterizada y escalamiento horizont
 
 ## 3. Comandos del Kernel a Ejecutar y Capturar (con tu `PS1`)
 ```bash
-export PS1="grupo1sf134-rol2-tu_nombre@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol2-tu_nombre@so-ha-prod:\w\$ "
 ```
 
 * **Módulo I (`cluster` + hilos `libuv` en `/proc/<PID>/task` y `top -H`):**

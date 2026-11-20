@@ -1,7 +1,7 @@
 # Guía de Ensamblaje del Informe Final (`informe/plantilla.docx`)
 
 - **Archivo base:** `informe/plantilla.docx` (conservar portada institucional, fuentes Arial, encabezados `#0F4761`, márgenes y estilo de tablas/figuras).
-- **Extensión obligatoria:** **12 a 20 páginas** compiladas en PDF (`Grupo_1SF134_Proyecto_HA.pdf`).
+- **Extensión obligatoria:** **12 a 20 páginas** compiladas en PDF (`Grupo_1IL143_Proyecto_HA.pdf`).
 - **Fecha límite:** **5 de diciembre de 2026 a las 23:59**.
 
 ---
@@ -10,7 +10,7 @@
 
 | Sección del Informe | Contenido Obligatorio | Responsable(s) |
 | :--- | :--- | :--- |
-| **Portada Institucional** | Replicar `plantilla.docx`: Curso 0689, Grupo 1SF134, Docente Isacio Manuel Tamayo Rodríguez, tabla de los 6 integrantes con su rol sorteado y fecha 5 de diciembre de 2026. | **Rol 6** (consolida) |
+| **Portada Institucional** | Replicar `plantilla.docx`: Curso 0689, Grupo 1IL143, Docente Isacio Manuel Tamayo Rodríguez, tabla de los 6 integrantes con su rol sorteado y fecha 5 de diciembre de 2026. | **Rol 6** (consolida) |
 | **1. Arquitectura del Sistema HA** | Diagrama de arquitectura (5 capas), flujo de peticiones HTTP/Cache-Aside/GTID y red `ha-net`. | **Rol 1 y Rol 6** |
 | **2. Marco Teórico Aplicado al Kernel** | Explicación práctica de Módulos I (procesos/hilos fijos vs dinámicos), II (`cgroups v2`, PSI, `oom_score_adj`) y III (OverlayFS vs volúmenes, Page Cache, `sendfile`, planificadores E/S) respaldada con salidas reales. | **Roles 1, 2, 3, 4** (cada uno su capa) |
 | **3. Hipótesis y Diseño Experimental** | Especificaciones de hardware detectadas en la VM (`nproc`, `free -h`, `lsblk`) y tabla de presupuestos (`--cpus`, `--memory`, `--memory-reservation`, `--pids-limit`, `--oom-score-adj`). | **Rol 5 y Rol 6** |

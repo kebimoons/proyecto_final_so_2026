@@ -1,7 +1,7 @@
 {
   "name": "so-ha-app",
   "version": "1.0.0",
-  "description": "Esqueleto de API Node.js HA para Sistemas Operativos 0689 (Grupo 1SF134)",
+  "description": "Esqueleto de API Node.js HA para Sistemas Operativos 0689 (Grupo 1IL143)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
