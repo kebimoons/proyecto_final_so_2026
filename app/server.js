@@ -17,10 +17,22 @@ const WORKERS = parseInt(process.env.APP_WORKERS || '2', 10);
 
 // TODO [Rol 2]: Implementar patron cluster (cluster.isPrimary / cluster.fork())
 // para generar procesos worker observables en 'top -H' y '/proc/<PID>/task'.
+const crypto = require('crypto');
+
 if (cluster.isPrimary) {
-  console.log(`[master pid=${process.pid}] TODO: iniciar ${WORKERS} workers con cluster.fork()`);
-  startWorker(); // Temporal: reemplazar por cluster.fork() x WORKERS + reinicio en evento 'exit'
+  console.log('[master pid=' + process.pid + '] Iniciando ' + WORKERS + ' workers (UV_THREADPOOL_SIZE=' + process.env.UV_THREADPOOL_SIZE + ')');
+  for (let i = 0; i < WORKERS; i++) {
+    cluster.fork();
+  }
+  cluster.on('exit', (worker, code, signal) => {
+    console.error('[master] Worker pid=' + worker.process.pid + ' salio (code=' + code + ', signal=' + signal + '). Reiniciando...');
+    cluster.fork();
+  });
 } else {
+  const poolSize = parseInt(process.env.UV_THREADPOOL_SIZE || '4', 10);
+  for (let i = 0; i < poolSize; i++) {
+    crypto.pbkdf2('warmup', 'salt', 1000, 32, 'sha256', () => {});
+  }
   startWorker();
 }
 
