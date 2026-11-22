@@ -97,7 +97,7 @@ echo "======================================================================"
 echo " 4. Activacion de Docker Engine y Permisos"
 echo "======================================================================"
 if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ]; then
-  $SUDO systemctl enable --now docke
+  $SUDO systemctl enable --now docker
 else
   $SUDO service docker start || true
 fi
