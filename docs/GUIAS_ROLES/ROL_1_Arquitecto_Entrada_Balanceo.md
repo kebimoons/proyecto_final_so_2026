@@ -26,7 +26,7 @@ git commit -m "feat(rol-1): configurar nginx-lb, nginx-assets y evidencia Page C
 ## 3. Comandos del Kernel a Ejecutar y Capturar (con tu `PS1`)
 Activa tu prompt antes de capturar:
 ```bash
-export PS1="grupo1sf134-rol1-tu_nombre@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol1-tu_nombre@so-ha-prod:\w\$ "
 ```
 
 * **Módulo I (`worker_processes` fijos vs vCPUs):**

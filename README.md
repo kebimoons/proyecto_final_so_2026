@@ -57,7 +57,7 @@ chmod +x scripts/*.sh
 Antes de tomar capturas de pantalla en `evidencias/`, activa el prompt personalizado:
 
 ```bash
-export PS1="grupo1sf134-rol<N>-<tu_nombre>@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol<N>-<tu_nombre>@so-ha-prod:\w\$ "
 ```
 
 ---
@@ -97,4 +97,4 @@ export PS1="grupo1sf134-rol<N>-<tu_nombre>@so-ha-prod:\w\$ "
 | **H1: Entorno y Sorteo** | 18 nov – 22 nov 2026 | VM Linux por integrante, ejecución de `setup_env.sh`, verificación de `cgroups v2` y sorteo de roles 1–6. | Todo el equipo |
 | **H2: Implementación por Capas** | 23 nov – 27 nov 2026 | Completar `db_up.sh` (Rol 4), `cache_up.sh` (Rol 3), `app/server.js` (Rol 2) y `nginx_*.conf` + `stack_up.sh` (Rol 1). Merge inicial a `dev`. | Roles 1, 2, 3 y 4 |
 | **H3: Carga, OOM y Failover** | 28 nov – 02 dic 2026 | Ejecutar Exp. 5.1–5.4 (`>=3` reps, `p99`, `memory.high` vs `memory.max`, failover y `MTTR`) y subir capturas a `evidencias/`. | Roles 5 y 6 (apoyo 2–4) |
-| **H4: Informe y Sustentación** | 03 dic – 05 dic 2026 (23:59) | Ensamblar `Grupo_1SF134_Proyecto_HA.pdf` (12–20 págs. desde `informe/plantilla.docx`), ensayar preguntas con `GUIA_SUSTENTACION_GRUPAL.md` y entregar `main`. | Todo el equipo |
+| **H4: Informe y Sustentación** | 03 dic – 05 dic 2026 (23:59) | Ensamblar `Grupo_1IL143_Proyecto_HA.pdf` (12–20 págs. desde `informe/plantilla.docx`), ensayar preguntas con `GUIA_SUSTENTACION_GRUPAL.md` y entregar `main`. | Todo el equipo |

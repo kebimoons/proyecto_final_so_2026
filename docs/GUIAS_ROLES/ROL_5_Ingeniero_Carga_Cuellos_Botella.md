@@ -22,7 +22,7 @@ git commit -m "feat(rol-5): pruebas de carga (>=3 reps), calculo p99 y analisis 
 
 ## 3. Comandos del Kernel a Ejecutar y Capturar (con tu `PS1`)
 ```bash
-export PS1="grupo1sf134-rol5-tu_nombre@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol5-tu_nombre@so-ha-prod:\w\$ "
 
 # Comparar 1 vs 3 replicas (minimo 3 repeticiones cada uno):
 ./scripts/stack_up.sh 1

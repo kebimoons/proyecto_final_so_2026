@@ -97,7 +97,7 @@ echo "======================================================================"
 echo " 4. Activacion de Docker Engine y Permisos"
 echo "======================================================================"
 if command -v systemctl >/dev/null 2>&1 && [ -d /run/systemd/system ]; then
-  $SUDO systemctl enable --now docke
+  $SUDO systemctl enable --now docker
 else
   $SUDO service docker start || true
 fi
@@ -116,14 +116,14 @@ echo ""
 echo "======================================================================"
 echo " 5. Configuracion de Prompt PS1 Personalizado para Evidencias"
 echo "======================================================================"
-PS1_CMD="export PS1=\"grupo1sf134-rol${ROL_NUM}-${MEMBER_NAME}@so-ha-prod:\\w\\$ \""
+PS1_CMD="export PS1=\"grupo1il143-rol${ROL_NUM}-${MEMBER_NAME}@so-ha-prod:\\w\\$ \""
 TARGET_HOME="$(eval echo "~${TARGET_USER}")"
 BASHRC="${TARGET_HOME}/.bashrc"
 
-if [ -f "$BASHRC" ] && ! grep -q "grupo1sf134-rol" "$BASHRC"; then
+if [ -f "$BASHRC" ] && ! grep -q "grupo1il143-rol" "$BASHRC"; then
   {
     echo ""
-    echo "# Prompt personalizado Proyecto HA - SO 0689 (Grupo 1SF134)"
+    echo "# Prompt personalizado Proyecto HA - SO 0689 (Grupo 1IL143)"
     echo "alias ps1-ha='${PS1_CMD}'"
   } >> "$BASHRC"
   echo "[OK] Alias 'ps1-ha' agregado a ${BASHRC}."

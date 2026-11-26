@@ -4,7 +4,7 @@
 - `scripts/falla.sh`
 - `scripts/sondeo.sh`
 - `docs/GUIA_SUSTENTACION_GRUPAL.md`
-- `informe/plantilla.docx` y compilación de `Grupo_1SF134_Proyecto_HA.pdf`
+- `informe/plantilla.docx` y compilación de `Grupo_1IL143_Proyecto_HA.pdf`
 
 ## 2. Flujo de Trabajo en tu Rama Git
 ```bash
@@ -24,7 +24,7 @@ git commit -m "feat(rol-6): failover HA en vivo, calculo MTTR e informe final"
 
 ## 3. Comandos del Kernel a Ejecutar y Capturar (con tu `PS1`)
 ```bash
-export PS1="grupo1sf134-rol6-tu_nombre@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol6-tu_nombre@so-ha-prod:\w\$ "
 
 # Escenario A: Caida de replica app-1
 ./scripts/sondeo.sh failover_app 15 &

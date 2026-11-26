@@ -7,7 +7,7 @@ Todas las capturas PNG subidas por el equipo deben obtenerse directamente desde 
 Antes de capturar cualquier terminal, ejecuta en tu VM (sustituyendo `<N>` y `<tu_nombre>`):
 
 ```bash
-export PS1="grupo1sf134-rol<N>-<tu_nombre>@so-ha-prod:\w\$ "
+export PS1="grupo1il143-rol<N>-<tu_nombre>@so-ha-prod:\w\$ "
 ```
 
 ## 2. Convención de Nombres de Capturas PNG
