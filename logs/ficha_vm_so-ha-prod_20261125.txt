@@ -1,0 +1,56 @@
+# Ficha de la VM de medicion - 2026-11-25 15:05:09 EST
+## Hipervisor y distribucion
+hipervisor: oracle
+distro: Ubuntu 26.04.1 LTS
+## Kernel (uname -r)
+7.0.0-44-generic
+## vCPU (nproc) y modelo
+nproc: 4
+Model name:                              13th Gen Intel(R) Core(TM) i7-13650HX
+Thread(s) per core:                      1
+Hypervisor vendor:                       KVM
+## RAM y swap (free -h)
+               total        used        free      shared  buff/cache   available
+Mem:           7.3Gi       2.7Gi       2.5Gi       122Mi       2.2Gi       4.6Gi
+Swap:          4.0Gi          0B       4.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   4G   0B   -1
+## Disco y planificador
+NAME     SIZE TYPE FSTYPE   ROTA MOUNTPOINT
+loop0      4K loop squashfs    0 /snap/bare/5
+loop1   66.8M loop squashfs    0 /snap/core24/1643
+loop2     20M loop squashfs    0 /snap/desktop-security-center/151
+loop3  260.3M loop squashfs    0 /snap/firefox/8763
+loop4   16.5M loop squashfs    0 /snap/firmware-updater/226
+loop5  614.5M loop squashfs    0 /snap/gnome-46-2404/164
+loop6   91.7M loop squashfs    0 /snap/gtk-common-themes/1535
+loop7    402M loop squashfs    0 /snap/mesa-2404/1839
+loop8   18.8M loop squashfs    0 /snap/prompting-client/222
+loop9    1.5M loop squashfs    0 /snap/hwctl/123
+loop10   828K loop squashfs    0 /snap/snapd-desktop-integration/391
+loop11  11.8M loop squashfs    0 /snap/snap-store/1390
+loop12  50.1M loop squashfs    0 /snap/snapd/27710
+sda       40G disk             0 
+|-sda1     1M part             0 
+`-sda2    40G part ext4        0 /
+sr0     1024M rom              0 
+disco de /: sda
+planificador: none [mq-deadline] 
+rotacional (0 = SSD): 0
+Filesystem     Type  Size  Used Avail Use% Mounted on
+/dev/sda2      ext4   40G   12G   26G  31% /
+Filesystem      Inodes  IUsed   IFree IUse% Mounted on
+/dev/sda2      2621440 221576 2399864    9% /
+## cgroups (stat -fc %T /sys/fs/cgroup)
+cgroup2fs
+## Docker y herramientas
+docker server 29.1.3
+ Storage Driver: overlayfs
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+hey: 0.1.4+ds-2
+wrk: wrk debian/4.1.0-4build3 [epoll] Copyright (C) 2012 Will Glozer
+sysstat: sysstat version 12.7.7
+redis-benchmark: redis-benchmark 8.0.5
+## Commit de dev usado
+a4c1574 Merge pull request #2 from kebimoons/feat/rol-2-app-escalabilidad (2026-11-22 00:15:04 -0500)
